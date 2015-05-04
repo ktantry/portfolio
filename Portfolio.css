@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Regular Old CSS Semantics */
+
+html, body, div, span, applet, object, iframe,h1h
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
       /* Typography Declarations */
   color: #222222;
@@ -5,56 +59,170 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/* My Headline Name */
+
+.kushal {
+  /* position: absolute; */
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 60px;
+  color: #838994;
+  text-align:center;
+  margin-left: 400px;
+}
+
+
+/* Top Navigation Elements */
+
+.top-navigation {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  border-bottom: 2px solid black;
+  background-color: #F0F8FF;
+}
+
+.top-navigation > .content {
+  height: 4.375rem;
+  width: 90%;
+  padding: 0 0.938rem;
+  margin: 0 auto;
+  min-width: 37.5rem;
+}
+
+.top-navigation .all-links {
+  color: #838994;
+  font-size: 1.04rem;
+  margin-top: 1.35rem;
+  float: right;
+}
+
+
+.top-navigation .all-links > li {
+  display: inline;
+  margin-left: 1.563rem;
+  height: 40px;
+  padding: 30px 0;
+    }
+
+.top-navigation .all-links > li:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Main Background Image */
+
 .masthead {
-  padding: 1em 0;
-  /* background-image: url('tiger.jpg'); */
-  background-image: url('https://unsplash.imgix.net/photo-1417722009592-65fa261f5632?q=75&fm=jpg&s=553e7d8a753f4d7b2a4161dcbe9d9801');
-  /* background-size: cover stretch; */
-  text-align: center;
-  font-size: 25px;
-  max-width: 26.5em;
+  background-image: url('https://unsplash.imgix.net/photo-1428342319217-5fdaf6d7898e?fit=crop&fm=jpg&h=500&q=75&w=1050');
+  background-position: center;
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 10px 10px 5px red;
-  border-radius: 6px;
-}
-
-.masthead-intro {
-  color: white;
-}
-
-.masthead-intro
-.content-footer {
-  margin-bottom: 0.1em; 
-  text-align: center;
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 2em;
+  background-size: cover;
+  height: 55.938rem;
+  overflow: auto;
 }
 
 .masthead-heading {
-  color: green;
   margin-top -0.2em;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
   font-size: 3em;
   letter-spacing: -0.02em;
-  text-shadow: 2px 2px orange; 
+  color: #838994;
 }
 
-.intro_section,
-.roots_section,
-.more_section,
-.projects,
-.content_footer{
-  max-width: 38em;
+/* Project Section */
+
+.the-man, .the-myth, .the-legend {
+  position: absolute;
+  font-size: 70px;
+  font-style: italic;
+  color: #838994;
+}
+
+.the-man {
+  margin-top: 178px;
+  margin-left: 127px;
+}
+
+.the-myth {
+  margin-top: 178px;
+  margin-left: 1735px;
+}
+
+.the-legend {
+  margin-top: 675px;
+  margin-left: 865px;
+  color: white;
+}
+
+.icon-section {
+  background-color: #F0F8FF;
+}
+
+.icon-section .content {
+  text-align: center;
+  width: 100%;
+  background-color: #F0F8FF;
+}
+
+.image-list > li {
+  display: inline-block;
+  margin: 0 150px 0;
+  margin-top: 40px;
+}
+
+
+.icon-section .content > h1 {
+  display: inline-block;
+  color: black;
+  font-weight: 300;
+  text-align: left;
+  text-align: top;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+
+.icon-section .content > h1:hover {
+  cursor: pointer;
+  font-style: italic;
+  background-color: black;
+  color: white;
+}
+
+.icon-section-2 {
+  background-color: #F0F8FF;
+}
+
+.cap-text {
+  margin-bottom: 2em;
+}
+
+.icon-section-2 .content {
+  text-align: center;
+  width: 100%;
+  background-color: #F0F8FF;
+}
+
+
+.icon-section-2 .content > h1 {
+  display: inline-block;
+  color: black;
+  font-weight: 300;
+}
+
+/* Footer Section */
+
+.content_footer {
+  /*max-width: 38em;*/
   margin-left: auto;
   margin-right: auto;
   background-color:green;
-  margin-top: 2em;
-  border: solid .5em orange;
+  /* margin-top: 2em; */
+  border: solid 2px black;
   border-radius: 6px;
   padding: 20px;
+  text-align: center;
 }
 
 .unsplash {
@@ -69,62 +237,12 @@ body {
   display: inline-block; 
 }
 
-.introduction > p,
-.location > p;
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
-
-.screenshots > li  {
-	text-align: center;
-}
-
-.screenshots > li > p {
-	text-align: left;
-	font-size: 20px;
-
-}
-
-.karma {
-	margin-top: 70px;
-
-}
-
-.more_section > h2 {
-  /* Typography Declarations */
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 1.2 em;
-  font-weight: bold;
-}
-
 .social > li {
   border-radius: 6px;
   border: solid .15em black;
   margin: 0 15px 0;
   padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-
-
-@media only screen and (max-width: 500px) {
-  .masthead-heading {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-    .masthead {
-        padding: 3em 0;
-        height: 500px;
-    }
-   
-}
-
-@media only screen and (max-width: 400px) {
-    .content_footer {
-  font-size: 10px; 
-}
-   
-}
